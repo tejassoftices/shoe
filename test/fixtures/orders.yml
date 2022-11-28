@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  shoe_total: 1
+  final_total: 1
+  size: 1
+  shoe_type: MyString
+  discount: 1.5
+
+two:
+  user: two
+  shoe_total: 1
+  final_total: 1
+  size: 1
+  shoe_type: MyString
+  discount: 1.5

@@ -1,0 +1,51 @@
+<section class="vh-100 mt-5">
+    <div class="container text-center">
+         <%= form_with(model: cart) do |form| %>
+            <% if cart.errors.any? %>
+                <div style="color: red">
+                  <h2><%= pluralize(cart.errors.count, "error") %> prohibited this cart from being saved:</h2>
+
+                  <ul>
+                    <% cart.errors.each do |error| %>
+                      <li><%= error.full_message %></li>
+                    <% end %>
+                  </ul>
+                </div>
+            <% end %>
+
+            <div>
+              <%= form.label :shoe, style: "display: block" %>
+              <%= form.text_field :shoe_id %>
+            </div>
+
+            <div>
+              <%= form.label :order, style: "display: block" %>
+              <%= form.text_field :order_id %>
+            </div>
+
+            <div>
+              <%= form.label :user, style: "display: block" %>
+              <%= form.text_field :user_id %>
+            </div>
+
+            <div>
+              <%= form.label :size, style: "display: block" %>
+              <%= form.text_field :size %>
+            </div>
+
+            <div>
+              <%= form.label :quantity, style: "display: block" %>
+              <%= form.text_field :quantity %>
+            </div>
+
+            <div>
+              <%= form.submit %>
+            </div>
+        <% end %>
+    
+    </div>
+</section>
+
+
+
+

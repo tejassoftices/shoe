@@ -1,0 +1,11 @@
+<p style="color: green" class = "mt-5"><%= notice %></p>
+
+  <%= render @cart %>
+
+<div class="text-center mb-5">
+  <%= link_to "Edit this cart", edit_cart_path(@cart) %> |
+  <%= link_to "Back to carts", carts_path %>
+  <%= button_to "Destroy this cart", @cart, method: :delete , class:"btn btn-secondary mt-3"%>
+</div>
+
+
